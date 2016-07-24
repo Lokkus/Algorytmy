@@ -11,6 +11,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "nieliniowe.h"
+
+# define M_PI		3.14159265358979323846
+
 void odw_string(char *tab){
 	char *beg = tab;
 	while(*(++tab)!='\0');
@@ -94,15 +98,17 @@ void fibb_nor(int ile){
 	}
 }
 
+
+
+
+
+
+
 int main(void) {
 
-	//for(int i = 1; i<=10; i++){
-	//	printf("%d, ",fibb_rek(i));
-	//}
-	//fibb_nor(10);
-	//generator_liczb_pierwszych(20);
-	gen_l_p(20);
+	//bisekcja2(funkcja);
 
+	regula_falsi2(funkcja);
 
 	return EXIT_SUCCESS;
 }
